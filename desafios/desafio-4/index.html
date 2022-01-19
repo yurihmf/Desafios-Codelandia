@@ -12,5 +12,47 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
     <body>
+        <main>
+            <section class="wrapper">
+                <div class="banner">
+                    <img src="assets/image.svg" alt="Imagem de login">
+                </div>
+                <div class="login">
+                    <div class="container">
+                        <div class="login-wrapper">
+                            <div class="title-login">
+                                <h6 class="subtitle">Bem vindo de volta</h6>
+                                <h4 class="title">Faça login na sua conta</h4>
+                            </div>
+                            <form>
+                                <label for="email" class="label">E-mail</label>
+                                <input type="text" name="email" class="input-field" id="email">
+                                <label for="password" class="label">Senha</label>
+                                <input type="password" name="password" class="input-field" id="password">
+                                <div class="options">
+                                    <div class="radio-btn">
+                                        <input type="radio" name="radio" id="radio">
+                                        <label for="radio">Lembre de mim</label>
+                                    </div>
+                                    <a href="#">Esqueceu sua senha?</a>
+                                </div>
+                                <button class="btn btn-login">Entrar</button>
+                                <button class="btn btn-google"><img src="assets/google.svg" alt="Icone Google"> Ou faça login com o Google</button>
+                            </form>
+                            <p class="sign-up">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script>
+            window.onload = () => {
+                const titleLogin = document.querySelector('.title-login');
+                const form = document.querySelector('form');
+
+                titleLogin.classList.add('animate');
+                form.classList.add('animate');
+            }
+        </script>
     </body>
 </html>
