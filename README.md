@@ -18,6 +18,8 @@ Para rodar o projeto, basta seguir estas etapas:
 2. Entre na pasta do projeto.
 3. Duplo clique no arquivo `index.html`.
 
+Ou caso queira visualizar o projeto rodando na nuvem basta acessar este link: https://yurihmf.github.io/desafios-codelandia/
+
 ## Desafios
 
 - [x] Desafio 01
