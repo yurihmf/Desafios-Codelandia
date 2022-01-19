@@ -8,7 +8,7 @@
 
 Estou realizando os desafios propostos pela comunidade Codelândia do Iuri Silva. Estou aproveitando para treinar um pouco o posicionamento dos itens no layout e tentando codar um código bem estruturado e legível.
 
-> Caso queira pontuar algo ou me dar algumas dicas para melhorar no código, abra uma issue ou se preferir, entre em contato comigo no discord mesmo ou via LinkedIn(`https://www.linkedin.com/in/yuri-homen-de-mello-ferreira-b04232191/`)
+> Caso queira pontuar algo ou me dar algumas dicas para melhorar no código, abra uma issue ou se preferir, entre em contato comigo no discord mesmo ou via LinkedIn(https://www.linkedin.com/in/yuri-homen-de-mello-ferreira-b04232191/)
 
 ## Como rodar o projeto
 
