@@ -69,7 +69,7 @@ main .wrapper .banner {
 }
 
 main .wrapper .login {
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 
@@ -241,6 +241,9 @@ main .wrapper .login .login-wrapper .sign-up a {
   main .wrapper .banner img {
     width: 50%;
     height: 50%;
+  }
+  main .wrapper .login {
+    width: 50%;
   }
 }
 
