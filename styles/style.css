@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin: 2rem auto 0;
+    gap: 1.5rem;
+}
+
+.container .main-title{
+    color: #fff;
+    font-size: 2.25rem;
+    width: 100%;
+    max-width: 31.25rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255 255 255 / 46%);
+    padding-bottom: 1rem;
+}
+
+.items{
+    width: 100%;
+    max-width: 31.25rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item{
+    width: 100%;
+    min-height: 5rem;
+    max-height: 8rem;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255 255 255 / 46%);
+    overflow: hidden;
+    text-decoration: none;
+    transition: all .3ms ease-in-out;
+}
+
+.item .preview{
+    width: 41%;
+    max-height: 8rem;
+    height: 100%;
+}
+
+.item .info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.item .info .title{
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.item .info .arrow{
+    fill: #fff;
+    width: 1.25rem;
+    height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        align-items: flex-start;
+    }
+
+    .container .main-title{
+        font-size: 3rem;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .items{
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .items .item{
+        width: 21%;
+        height: auto;
+        max-height: 100%;
+        flex-direction: column;
+    }
+
+    .items .item .preview{
+        width: 100%;
+        max-height: 100%;
+    }
+
+    .items .item .info{
+        padding: 1.5rem 1.25rem;
+    }
+
+    .items .item:hover{
+        transform: scale(1.1);
+        -webkit-box-shadow: -1px 1px 23px -4px #000000; 
+        box-shadow: -1px 1px 23px -4px #000000;
+    }
+}

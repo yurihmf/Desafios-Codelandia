@@ -1,0 +1,205 @@
+/*Variáveis*/
+$font: 'Montserrat';
+
+$bgSite: #f6f6f6;
+$bgCard: #ebe9ea;
+
+$white: #fff;
+
+$title: #181818; 
+$text: #474747;
+  
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    font-family: $font;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;  
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    @media screen and(min-width: 1024px){
+        width: 85%;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .discount{
+        width: 100vw;
+        height: 3.75rem;
+        background: $title;
+        text-align: center;
+        color: $white;
+        font-weight: 500;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        width: 100vw;
+        height: 3.75rem;
+        font-size: 1.5rem;
+        color: $title;
+        font-weight: 600;
+        background: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+main{
+    .banner{
+        width: 100vw;
+        min-height: 377px;
+        background: url(../assets/wallpaper.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .title{
+            color: $white;
+            font-size: 1.65rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+        }
+        .description{
+            color: $white;
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+    }
+    .shop{
+        padding: 3.125rem 0;
+        text-align: center;
+        .title{
+            color: $title;
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+        .subtitle{
+            color: $title;
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+        .items{
+            margin-top: 3.75rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.875rem;
+            .item{
+                background: $bgCard;
+                width: 100%;
+                height: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                transform: translateX(-50px);
+                img{
+                    width: auto;
+                    height: 150px;
+                    transition: all .3s ease-in-out;
+                }
+                &.animate{
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1024px){
+        .banner{
+            .description{
+                width: 35%;
+            }
+        }
+        .shop{
+            .items{
+                gap: 0.625rem;
+                .item{
+                    width: 24%;
+                    img{
+                        transition: all .3s ease-in-out;
+                    }
+                    &:hover{
+                        img{
+                            transform: scale(1.1) rotate(-25deg);
+                            // transform: rotate(-25deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1600px){
+        .banner{
+            height: 480px;
+            .description{
+                width: 25%;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100vw;
+    height: 60px;
+    background: $title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    .content{
+        font-size: 1.125rem;
+    }
+}

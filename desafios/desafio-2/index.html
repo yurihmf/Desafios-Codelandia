@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+    <body>
+        <header>
+            <section class="discount"> 
+                <p>Ganhe R$ 10,00 de desconto no frete</p>
+            </section>
+            <a href="desafios/desafio-3/" class="logo"> 
+                <p>JordanShoes</p>
+            </a>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <h2 class="title">A melhor loja de Jordan</h2>
+                    <p class="description">O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</p>
+                </div>
+            </section>
+            <section class="shop">
+                <div class="container">
+                    <h2 class="title">Destaques</h2>
+                    <p class="subtitle">Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+                    <div class="items">
+                        <a href="#" class="item">
+                            <img src="assets/1.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/2.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/3.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/4.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/5.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/6.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/7.png" alt="Jordan 1">
+                        </a>
+                        <a href="#" class="item">
+                            <img src="assets/8.png" alt="Jordan 1">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="content">
+                Todos os direitos reservados.
+            </p>
+        </footer>
+        <script>
+            window.onload = () => {
+                const items = document.querySelectorAll('.item');
+                items.forEach(item => {
+                    setTimeout(() => {item.classList.add('animate');}, 1500);
+                })
+            }
+        </script>
+    </body>
+</html>
