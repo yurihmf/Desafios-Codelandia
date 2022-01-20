@@ -1,0 +1,188 @@
+$fontPrimary: 'Open Sans', sans-serif;
+$fontSecondary: DrukWide, sans-serif;
+
+$red: #FF4656;
+
+$white: #ffffff;
+$dark: #1F2326;   
+
+@font-face {
+    font-family: DrukWide;
+    src: url(../fonts/Druk-Wide-Bold.woff);
+    font-weight: bold;
+}
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: $fontPrimary;
+    background: url(../assets/background.png);
+    background-size: cover;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    @media screen and(min-width:1024px){
+        width: 75%;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    height: 100%;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.375rem 0;
+        .company{
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 2rem;
+        }
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3.125rem;
+        .title{
+            font-size: 3.5rem;
+            color: $white;
+            font-weight: 700;
+            line-height: 4.75rem;
+        }
+        .agents{
+            display: flex;
+            gap: 1.75rem;
+            .agent{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+                position: relative;
+                z-index: 2;
+                .agent-image{
+                    position: relative;
+                    z-index: 2;
+                    transition: all .3s ease-in-out;
+                    cursor: pointer;
+                    img{
+                        clip-path: polygon(13% 0, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 13%);
+                        border: 1px solid $white;
+                        background: $red;
+                        position: relative;
+                    }
+                    &:after{
+                        content: "";
+                        background: $white;
+                        width: 1px;
+                        height: 29px;
+                        position: absolute;
+                        top: -3px;
+                        right: 161px;
+                        z-index: 10;
+                        transform: rotate(45deg);
+                    }
+                    &:hover{
+                        transform: translate(-11px, -11px);
+                    }
+                }
+                .agent-name{
+                    font-family: $fontSecondary;
+                    font-size: 0.875rem;
+                    color: $red;
+                    letter-spacing: 0rem;
+                    line-height: 1.125rem;
+                    font-weight: 700;
+                }
+                &::after{
+                    content: "";
+                    background: $white;
+                    width: 1px;
+                    height: 30px;
+                    position: absolute;
+                    top: -15px;
+                    right: 172px;
+                    z-index: 10;
+                    transform: rotate(45deg);
+                }
+                &::before{
+                    content: "";
+                    border: 1px solid $white;
+                    width: 99%;
+                    height: 85%;
+                    position: absolute;
+                    top: -11px;
+                    right: 11px;
+                    z-index: 1;
+                    clip-path: polygon(13% 0, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 13%);
+                }
+            }
+        }
+    }
+    .socials{
+        display: flex;
+        align-items: center;
+        gap: 2.375rem;
+        padding: 1.625rem 0;
+        position: relative;
+        .phoenix{
+            position: absolute;
+            bottom: 0;
+            right: -50px;
+            width: auto;
+            height: 35rem;
+        }
+    }
+    @media only screen and (min-width:1600px){
+        .socials{
+            .phoenix{
+                height: 798px;
+            }
+        }
+    }
+}

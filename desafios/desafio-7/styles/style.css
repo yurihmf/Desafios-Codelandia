@@ -1,0 +1,244 @@
+@font-face {
+  font-family: DrukWide;
+  src: url(../fonts/Druk-Wide-Bold.woff);
+  font-weight: bold;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: url(../assets/background.png);
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  height: 100%;
+}
+
+.container .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.375rem 0;
+}
+
+.container .header .company {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.container .content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.125rem;
+}
+
+.container .content .title {
+  font-size: 3.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 4.75rem;
+}
+
+.container .content .agents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.75rem;
+}
+
+.container .content .agents .agent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 2;
+}
+
+.container .content .agents .agent .agent-image {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.container .content .agents .agent .agent-image img {
+  -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 13%);
+          clip-path: polygon(13% 0, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 13%);
+  border: 1px solid #ffffff;
+  background: #FF4656;
+  position: relative;
+}
+
+.container .content .agents .agent .agent-image:after {
+  content: "";
+  background: #ffffff;
+  width: 1px;
+  height: 29px;
+  position: absolute;
+  top: -3px;
+  right: 161px;
+  z-index: 10;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container .content .agents .agent .agent-image:hover {
+  -webkit-transform: translate(-11px, -11px);
+          transform: translate(-11px, -11px);
+}
+
+.container .content .agents .agent .agent-name {
+  font-family: DrukWide, sans-serif;
+  font-size: 0.875rem;
+  color: #FF4656;
+  letter-spacing: 0rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}
+
+.container .content .agents .agent::after {
+  content: "";
+  background: #ffffff;
+  width: 1px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: 172px;
+  z-index: 10;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container .content .agents .agent::before {
+  content: "";
+  border: 1px solid #ffffff;
+  width: 99%;
+  height: 85%;
+  position: absolute;
+  top: -11px;
+  right: 11px;
+  z-index: 1;
+  -webkit-clip-path: polygon(13% 0, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 13%);
+          clip-path: polygon(13% 0, 100% 0, 100% 100%, 75% 100%, 0 100%, 0 13%);
+}
+
+.container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.375rem;
+  padding: 1.625rem 0;
+  position: relative;
+}
+
+.container .socials .phoenix {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  width: auto;
+  height: 35rem;
+}
+
+@media only screen and (min-width: 1600px) {
+  .container .socials .phoenix {
+    height: 798px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

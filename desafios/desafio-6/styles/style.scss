@@ -1,0 +1,164 @@
+$fontPrimary: 'B612';
+
+$yellow: #FFA800;
+$blue: #0072D2;
+
+$white: #ffffff;
+$dark: #131318;
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: $fontPrimary;
+    background: url('../assets/fundo.jpg');
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(50%);
+    background-size: cover;
+    color: $white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+.container{
+    width: 88%;
+    margin: 0 auto;
+    @media screen and(min-width:1024px){
+        width: 75%;
+    }
+    @media screen and(min-width:1600px){
+        width: 53%;
+    }
+}
+
+.container{
+    .header{
+        width: 100%;
+        text-align: center;
+        padding-top: 2.875rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.25rem;
+        margin-bottom: 7.5rem;
+        .subtitle{
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .title{
+            font-size: 6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+    .infos{
+        display: flex;
+        gap: 4.5rem;
+        .thumb{
+            width: auto;
+            height: 16.75rem;
+            border-radius: 20px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 2.8rem;
+            .sinopse{
+                font-size: 1.25rem;
+                line-height: 2rem;
+                font-weight: 400;
+            }
+            .data{
+                display: flex;
+                justify-content: space-between;
+                .duration{
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    img{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+                .rate{
+                    display: flex;
+                    gap: 0.8rem;
+                    .star{
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+                .year{
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                }
+            }
+            .buttons{
+                display: flex;
+                gap: 1.25rem;
+                .btn{
+                    font-size: 1rem;
+                    font-weight: 700;
+                    border-radius: 3px;
+                    color: $white;
+                    transition: all .3s ease-in-out;
+                    cursor: pointer;
+                }
+                .btn-play{
+                    background: $blue;
+                    padding:0.938rem 1.688rem;
+                    &:hover{
+                        background: $white;
+                        border: 1px solid $blue;
+                        color: $blue;
+                    }
+                }
+                .btn-trailer{
+                    border: 1px solid $white;
+                    background: $dark;
+                    padding: 0.938rem 1.563rem;
+                    &:hover{
+                        border: 1px solid $dark;
+                        background: $white;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}
