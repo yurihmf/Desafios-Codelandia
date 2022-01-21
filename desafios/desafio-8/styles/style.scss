@@ -237,3 +237,28 @@ main{
         }
     }
 }
+
+@media screen and(min-width: 1024px){
+    :root{
+        font-size: 12px;
+    }
+    main{
+        .content{
+            .memoji{
+                &:nth-of-type(2){
+                    left: 10px;
+                }
+                &:nth-of-type(4){
+                    left: 70px;
+                }
+                &:nth-of-type(5){
+                    left: 400px;
+                    bottom:0;
+                }
+                &:nth-of-type(2){
+                    left: 10px;
+                }
+            }
+        }
+    }
+}

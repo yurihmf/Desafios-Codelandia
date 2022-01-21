@@ -27,9 +27,9 @@ Ou caso queira visualizar o projeto rodando na nuvem basta acessar este link: ht
 - [x] Desafio 03
 - [x] Desafio 04
 - [x] Desafio 05
-- [ ] Desafio 06
-- [ ] Desafio 07
-- [ ] Desafio 08
+- [x] Desafio 06
+- [x] Desafio 07
+- [x] Desafio 08
 - [ ] Desafio 09
 - [ ] Desafio 10
 - [ ] Desafio 11
