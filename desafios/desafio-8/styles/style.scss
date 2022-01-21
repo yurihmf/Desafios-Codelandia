@@ -1,0 +1,239 @@
+$fontPrimary: 'Inter', sans-serif;
+$fontSecondary: 'Sen', sans-serif;
+
+$purple: #6610F2;
+
+$white: #ffffff;
+$white-200: #EAEAEA;
+$gray: #2f2f2f;   
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;              
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: $fontPrimary;
+    background: #f9f9f9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button,
+input {
+    border: 0;
+}
+button:focus,
+input:focus {
+    border: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    @media screen and(min-width:1024px){
+        width: 75%;
+    }
+}
+
+main{
+    .header{
+        padding: 2.875rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo{
+            color: $gray;
+            font-family: $fontSecondary; 
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 2.813rem;
+            .btn{
+                border: 2px solid $white-200;
+                border-radius: 100px;
+                color: $gray;
+                &:hover{
+                    background: $white-200;
+                }
+            }
+            .btn-search{
+                padding: 1rem;
+                background: #fff;
+                cursor: pointer;
+            }
+            .btn-login{
+                padding: 1rem 2.5rem;
+                background: #fff;
+                font-size: 1rem;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 6.5rem;
+        position: relative;
+        height: 100vh;
+        .subtitle{
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+            color: $gray;
+        }
+        .title{
+            font-size: 4.5rem;
+            line-height: 4.375rem;
+            font-weight: 700;
+            color: $gray;
+            text-align: center;
+            width: 55%;
+            margin-bottom: 5.125rem;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            gap: 3.25rem;
+            .btn{
+                padding: 1rem 2.5rem;
+                border-radius: 10px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            .btn-create-memoji{
+                background: $purple;
+                color: $white;
+                border: 2px solid $purple;
+                &:hover{
+                    background: $white;
+                    color: $purple;
+                }
+            }
+            .btn-library{
+                color: $gray;
+                border: 2px solid $white-200;
+                &:hover{
+                    background: $gray;
+                    border: 2px solid $gray;
+                    color: $white-200;
+                }
+            }
+        }
+        .memoji{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:nth-of-type(2){
+                top: 40px;
+                left: 50px;
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(136.92deg, #2DC7ED 3.14%, rgba(45, 199, 237, 0) 100%);
+                transform: rotate(45deg);
+                img{
+                    transform: rotate(-45deg);
+                }
+            }
+            &:nth-of-type(3){
+                top: 10px;
+                right: 90px;
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(270deg, #F2C94C 0%, rgba(242, 201, 76, 0) 100%);
+                border-radius: 50%;
+            }
+            &:nth-of-type(4){
+                bottom: 90px;
+                left: 120px;
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(136.92deg, #EF7C89 3.14%, rgba(239, 124, 137, 0) 100%);
+                border-radius: 30px;
+            }
+            &:nth-of-type(5){
+                bottom: 40px;
+                left: 700px;
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(270deg, #7248EC 0%, rgba(114, 72, 236, 0) 100%);
+                border-radius: 50%;
+            }
+            &:nth-of-type(6){
+                bottom: 150px;
+                right: 20px;
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(180deg, #00E861 0%, rgba(0, 232, 97, 0) 100%);
+                clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    .testimonies{
+        width:80%;
+        background: #FCFCFC;
+        padding: 3.75rem 4.688rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 11.875rem;
+        margin: 0 auto;
+        .testimony{
+            display: flex;
+            flex-direction: column;
+            gap: 1.375rem;
+            .name{
+                color: $gray;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                font-family: $fontSecondary;
+                padding-left: 0.75rem;
+                border-left: 2px solid $purple;
+            }
+            .text{
+                color: $gray;
+                font-size: 1rem;
+                line-height: 1.625rem;
+                font-weight: 400;
+                font-style: italic;
+            }
+        }
+    }
+}
