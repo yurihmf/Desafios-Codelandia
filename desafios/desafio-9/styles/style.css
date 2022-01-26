@@ -1,0 +1,469 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  background: #171717;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input {
+  border: 0;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 75%;
+  }
+}
+
+main .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.188rem 0;
+}
+
+main .header .logo {
+  color: #F9F9F9;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+
+main .header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.813rem;
+}
+
+main .header nav a {
+  color: #F9F9F9;
+  font-size: 1.125rem;
+  font-weight: 400;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .header nav a:hover::before {
+  content: "";
+}
+
+main .header nav a::before {
+  background: #00DF5E;
+  width: 3em;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+main .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 7.25rem 0 10rem 0;
+}
+
+main .banner .infos {
+  width: 35%;
+}
+
+main .banner .infos .title {
+  color: #F9F9F9;
+  font-size: 2.25rem;
+  line-height: 2.875rem;
+  font-weight: 700;
+  margin-bottom: 1.125rem;
+}
+
+main .banner .infos .subtitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #828282;
+  margin-bottom: 2.188rem;
+}
+
+main .banner .infos .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+main .banner .infos .buttons .btn {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+main .banner .infos .buttons .btn-download {
+  background: #00DF5E;
+  color: #171717;
+  padding: 0.75rem 1.688rem;
+}
+
+main .banner .infos .buttons .btn-download:hover {
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+
+main .banner .infos .buttons .btn-contact {
+  background: #171717;
+  color: #F9F9F9;
+  border: 1px solid #333333;
+  padding: 0.75rem 1.125rem;
+}
+
+main .banner .infos .buttons .btn-contact:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+main .about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.875rem;
+  padding-bottom: 5.313rem;
+}
+
+main .about-me .title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.625rem;
+  color: #F9F9F9;
+}
+
+main .about-me .text {
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #828282;
+  text-align: center;
+  width: 73%;
+}
+
+main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7.5rem;
+  padding-bottom: 7.875rem;
+}
+
+main .contact .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .contact .contact-info .icon {
+  width: 3.875rem;
+  height: 3.875rem;
+  background: #212121;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.125rem;
+}
+
+main .contact .contact-info .info-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #F9F9F9;
+  line-height: 1.438rem;
+  margin-bottom: 0.375rem;
+}
+
+main .contact .contact-info .info-data {
+  font-size: 1rem;
+  line-height: 1.313rem;
+  font-weight: 400;
+  color: #828282;
+}
+
+main .projects {
+  padding-bottom: 7.875rem;
+}
+
+main .projects .title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  color: #F9F9F9;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+main .projects .cards-project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem 2.813rem;
+}
+
+main .projects .cards-project .card-project {
+  width: 30%;
+  background: #212121;
+  border: 1px solid #333333;
+  padding: 1.25rem 1.563rem;
+}
+
+main .projects .cards-project .card-project .thumb {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+main .projects .cards-project .card-project .thumb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .projects .cards-project .card-project .infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+main .projects .cards-project .card-project .infos .title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+main .projects .cards-project .card-project .infos .technologies {
+  font-size: 0.875rem;
+  color: #828282;
+  line-height: 1.125rem;
+  font-weight: 400;
+}
+
+main .services {
+  padding-bottom: 7.875rem;
+}
+
+main .services .title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  color: #F9F9F9;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+main .services .cards-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.813rem;
+}
+
+main .services .cards-box .service-card {
+  width: 30%;
+  background: #212121;
+  border: 1px solid #333333;
+  position: relative;
+  padding: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 2.813rem;
+}
+
+main .services .cards-box .service-card img {
+  width: auto;
+  height: 3.5rem;
+}
+
+main .services .cards-box .service-card .service-name {
+  font-size: 2rem;
+  color: #828282;
+  line-height: 2.625rem;
+  font-weight: 500;
+}
+
+main .services .cards-box .service-card::before {
+  content: "";
+  background: #00DF5E;
+  width: calc(100% + 2px);
+  height: 5px;
+  position: absolute;
+  left: -1px;
+  bottom: -4px;
+}
+
+main .skills {
+  padding-bottom: 7.875rem;
+}
+
+main .skills .title {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  color: #F9F9F9;
+  font-weight: 700;
+  margin-bottom: 1.875rem;
+}
+
+main .skills .skills-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.125rem;
+}
+
+main .skills .skills-box .skill-card {
+  width: 9.375rem;
+  height: 9.375rem;
+  background: #212121;
+  border: 1px solid #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer {
+  width: 100%;
+  padding: 1.25rem 0;
+  background: #212121;
+  text-align: center;
+}
+
+footer .text {
+  color: #F9F9F9;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.313rem;
+}
+
+footer .text span {
+  font-weight: 700;
+  color: #00DF5E;
+}
+/*# sourceMappingURL=style.css.map */

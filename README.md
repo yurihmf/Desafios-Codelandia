@@ -30,7 +30,7 @@ Ou caso queira visualizar o projeto rodando na nuvem basta acessar este link: ht
 - [x] Desafio 06
 - [x] Desafio 07
 - [x] Desafio 08
-- [ ] Desafio 09
+- [x] Desafio 09([ ] fazer mobile)
 - [ ] Desafio 10
 - [ ] Desafio 11
 - [ ] Desafio 12
