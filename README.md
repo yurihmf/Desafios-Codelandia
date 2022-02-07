@@ -31,7 +31,7 @@ Ou caso queira visualizar o projeto rodando na nuvem basta acessar este link: ht
 - [x] Desafio 07
 - [x] Desafio 08
 - [x] Desafio 09([ ] fazer mobile)
-- [ ] Desafio 10
+- [x] [Desafio 10](https://github.com/yurihmf/blog-headless)
 - [ ] Desafio 11
 - [ ] Desafio 12
 - [ ] Desafio 13
