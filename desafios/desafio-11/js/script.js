@@ -27,7 +27,7 @@ function startGame(){
         case 'easy':
             shuffle();
             localStorage.setItem('dificult', 'easy');
-            timer.style.display = 'none';
+            // timer.style.display = 'none';
             break;
             
         case 'medium':
@@ -120,7 +120,7 @@ function shuffle(){
 
 function finishGame(){
     modais.style.display = 'flex';
-    time.stop();
+    // time.stop();
     if(pairs == 9){
         modalWin.style.display = 'flex';
     } else {
